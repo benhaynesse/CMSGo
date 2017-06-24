@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import style from '../style/side-menu.css';
+import style from '../../style/side-menu.css';
 class Sidebar extends Component{
 
     closeSidebar(){

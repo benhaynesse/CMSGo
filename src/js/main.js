@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import MandS from './MenuAndSidebar';
+import MandS from './MenuAndSidebar/MenuAndSidebar';
+import MainBody from './MainDiv/MainBody';
 
 import style from '../style/main.css';
-
-
 
 class App extends Component{
 
@@ -23,7 +22,7 @@ class App extends Component{
     }
 
     render(){
-        let navItems = ["Home", "About", "Services", "Contact"];
+        let navItems = ["Reddit", "Settings"];
 
         if(this.state.sidebar){
             document.getElementById('main').style.marginLeft = this.width;
@@ -39,11 +38,11 @@ class App extends Component{
             toggleSideBar={()=>this.toggleSideBar()}                       
             />
             <div id="main">
-                MAIN CONTENT
+                <MainBody/>
             </div>
             </div>
         );
     }
 }
 
-ReactDOM.render(<App/>, document.getElementById("app"));
+export default App;

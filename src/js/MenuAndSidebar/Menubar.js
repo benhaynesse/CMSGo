@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import style from '../style/menu.css';
+import style from '../../style/menu.css';
 
 class MenuBar extends Component {
 

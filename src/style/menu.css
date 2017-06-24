@@ -27,3 +27,9 @@ padding:0;
     background-color: #ddd;
     color:#000;   
 }
+
+@media screen and (max-width: 570px){
+    .navbar-nav{
+        display:none;
+    }
+}
