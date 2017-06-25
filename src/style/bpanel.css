@@ -1,10 +1,9 @@
 
-.outer{
+.outer{    
   border:1px solid #3b5998;
   position:relative;
   width:80%;
-  left:10%;
-  margin:10px;
+  left:10%; 
 }
 
 .top{
@@ -69,3 +68,9 @@
   background-color:black;   
 }
 
+@media screen and (max-width:570px){
+    .outer{
+        width:100%;
+        left:0;        
+    }
+}
